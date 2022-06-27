@@ -1,7 +1,7 @@
 import React from "react";
 import InformationComponents from "Components/InformationComponents";
 
-function Information() {
+function About() {
   return (
     <div>
       <InformationComponents />
@@ -9,4 +9,4 @@ function Information() {
   );
 }
 
-export default Information;
+export default About;

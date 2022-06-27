@@ -5,13 +5,20 @@ import ProjectDescription from 'Components/ProjectDescription'
 
 const LandscapeContainer = styled.div`
   display: flex;
+  flex-direction:column;
+  align-content: center;
+  width:100vw;
+  gap:20em;
 `
-const LandscapeImage = styled.div`
-  display: flex;
-height: 293px;
-width: 367px;
-border-radius: 0px;
-background-color: lime;
+const LandscapeImage = styled.img`
+
+object-fit: contain;
+align-content: center;
+margin-top:4em;
+margin-left: auto;
+margin-right: auto;
+width:80%;
+
 `
 
 
@@ -20,18 +27,11 @@ background-color: lime;
 function LandscapeComponent(){
   return (
 
-       <LandscapeContainer data-testid="portrait-view-container">
+      <LandscapeContainer data-testid="landscape-view-container">
 
-  <ProjectDescription/>
-      <LandscapeImage data-testid="portrait-canvas">
-      <LandscapeImage   src={process.env.PUBLIC_URL } alt=""/>
-      </LandscapeImage>
-      <div data-testid="portrait-caption"> 
-      <p>""</p>
-      </div>
+      <LandscapeImage src={process.env.PUBLIC_URL + "./Assets/Images/BEACH DEMO.jpg" } alt=""/>
 
-
-
+      <ProjectDescription/>
       </LandscapeContainer> 
 
 

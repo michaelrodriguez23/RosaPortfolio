@@ -6,7 +6,7 @@ function HamburgerMenu() {
 
   return (
     <div className="hamburgerMenu" >
-        <Hamburger toggled={isOpen} toggle={setOpen}   /> 
+        <Hamburger toggled={isOpen} toggle={setOpen} size={27} distance="lg"    /> 
     </div>
   )
 }
